@@ -1,0 +1,7 @@
+mutation createTodo($data: TodoCreateInput!) {
+  createTodo(data: $data) {
+    done
+    id
+    text
+  }
+}

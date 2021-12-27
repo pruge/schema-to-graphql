@@ -1,0 +1,7 @@
+mutation removeTodo($where: TodoWhereUniqueInput!) {
+  removeTodo(where: $where) {
+    done
+    id
+    text
+  }
+}

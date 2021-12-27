@@ -1,0 +1,8 @@
+query drafts($where: QueryPostsWhereInput) {
+  drafts(where: $where) {
+    body
+    id
+    published
+    title
+  }
+}

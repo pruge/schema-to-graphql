@@ -1,0 +1,5 @@
+fragment sampleTodo on Todo {
+  done
+  id
+  text
+}

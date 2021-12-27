@@ -1,0 +1,7 @@
+{
+  "schema": "./test/schema.graphql",
+  "dest": "./test/gql",
+  "alias": {
+    "Post": ["Draft"]
+  }
+}

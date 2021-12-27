@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "declaration": true,
+    "outDir": "./dist",
+
+    "strict": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+
+    // "allowJs": true,
+    // "skipLibCheck": true,
+    // "allowSyntheticDefaultImports": true,
+    // "forceConsistentCasingInFileNames": true,
+    // "moduleResolution": "node",
+    // "resolveJsonModule": true,
+    // "isolatedModules": true,
+    // "noImplicitAny": true,
+    // "noImplicitThis": true,
+    // "strict": true,
+    // "strictNullChecks": true,
+    // "noEmit": true,
+    // "jsx": "preserve",
+    // "noUnusedLocals": false,
+    // "noUnusedParameters": false,
+    // "preserveConstEnums": true,
+    // "removeComments": false,
+    // "sourceMap": true,
+    // "esModuleInterop": true,
+    // "incremental": true
+  },
+  "include": ["src/**/*"]
+}

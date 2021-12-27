@@ -1,0 +1,7 @@
+mutation updateTodo($data: TodoUpdateInput!, $where: TodoWhereUniqueInput!) {
+  updateTodo(data: $data, where: $where) {
+    done
+    id
+    text
+  }
+}

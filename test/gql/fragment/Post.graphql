@@ -1,0 +1,6 @@
+fragment samplePost on Post {
+  body
+  id
+  published
+  title
+}

@@ -1,0 +1,8 @@
+mutation removePost($where: PostWhereUniqueInput!) {
+  removePost(where: $where) {
+    body
+    id
+    published
+    title
+  }
+}

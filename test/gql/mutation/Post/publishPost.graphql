@@ -1,0 +1,8 @@
+mutation publishPost($data: PostUpdateInput!, $where: PostWhereUniqueInput!) {
+  publishPost(data: $data, where: $where) {
+    body
+    id
+    published
+    title
+  }
+}

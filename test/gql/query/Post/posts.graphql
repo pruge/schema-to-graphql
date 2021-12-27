@@ -1,0 +1,8 @@
+query posts($where: QueryPostsWhereInput) {
+  posts(where: $where) {
+    body
+    id
+    published
+    title
+  }
+}
