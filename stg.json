@@ -1,4 +1,5 @@
 {
+  "overwrite": false,
   "schema": "./test/schema.graphql",
   "dest": "./test/gql",
   "alias": {

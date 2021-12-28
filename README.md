@@ -15,6 +15,7 @@ yarn add -D schema-to-graphql
 
 ```js
 {
+  "overwrite": false,
   "schema": "./test/schema.graphql",
   "dest": "./test/gql",
   "alias": {
@@ -23,8 +24,8 @@ yarn add -D schema-to-graphql
 }
 ```
 
-> command
+## command
 
 ```js
-npx stg
+npx stg [--config stg.json]
 ```

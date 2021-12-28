@@ -1,5 +1,6 @@
-query todos() {
-  todos() {
+# hello
+query todos {
+  todos {
     done
     id
     text

@@ -1,8 +1,5 @@
 mutation removeAllPost($where: PostWhereInput) {
   removeAllPost(where: $where) {
-    body
-    id
-    published
-    title
+    count
   }
 }

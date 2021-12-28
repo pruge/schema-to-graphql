@@ -1,4 +1,4 @@
-import {writeFile} from './helper'
+import {getType2, writeFile} from './helper'
 
 const getFragment = (name: string) => {
   const sampleName = `sample${name}`
@@ -15,7 +15,12 @@ const getFields = (fields: any, level: string) => {
 // Query/Mutation에서 사용
 export const typeFields: {[key: string]: string} = {}
 
-export const buildFragment = (node: any, {dest}: Options) => {
+export const getFieldsByType = (node: any) => {
+  const type = getType2(node.type)
+  return typeFields[type]
+}
+
+export const buildFragment = (node: any, {dest, overwrite}: Options) => {
   const name = node.name.value
   const {firstLine, lastLine} = getFragment(name)
   const fields = getFields(node.fields, '  ')
@@ -23,5 +28,5 @@ export const buildFragment = (node: any, {dest}: Options) => {
 
   typeFields[name] = getFields(node.fields, '    ')
 
-  writeFile(dest, 'fragment', name, ctx)
+  writeFile(dest, 'fragment', name, ctx, overwrite)
 }
