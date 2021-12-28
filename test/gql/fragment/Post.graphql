@@ -1,4 +1,4 @@
-fragment samplePost on Post {
+fragment PostFields on Post {
   body
   id
   published

@@ -1,7 +1,7 @@
 import {getType2, writeFile} from './helper'
 
 const getFragment = (name: string) => {
-  const sampleName = `sample${name}`
+  const sampleName = `${name}Fields`
   const firstLine = `fragment ${sampleName} on ${name} {`
   const lastLine = '}'
 

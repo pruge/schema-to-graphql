@@ -1,3 +1,3 @@
-fragment sampleAffectedRowsOutput on AffectedRowsOutput {
+fragment AffectedRowsOutputFields on AffectedRowsOutput {
   count
 }

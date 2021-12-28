@@ -1,4 +1,4 @@
-fragment sampleTodo on Todo {
+fragment TodoFields on Todo {
   done
   id
   text
